@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from "styled-components";
+import { ThemeProvider } from "styled-components";
+import "./App.css";
 
-function App() {
+const theme = {
+  fonts: {
+    body: "system-ui, sans-serif",
+    heading: "sans-serif",
+    monospace: "Menlo, monospace",
+  },
+  colors: {
+    background: "#333333",
+    text: "#f1f1f1",
+    primary: "#f16638",
+    secondary: "#6d3597",
+  },
+};
+
+const Background = styled.main`
+  background: ${(props) => props.theme.colors.background};
+  height: 100vh;
+  display: flex;
+`;
+
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Background>
+      </Background>
+    </ThemeProvider>
   );
-}
+};
 
 export default App;
