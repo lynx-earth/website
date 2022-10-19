@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { ThemeProvider } from "styled-components";
-import "./App.css";
+import Navbar from "./components/Navbar";
 
 const theme = {
   fonts: {
@@ -16,19 +16,19 @@ const theme = {
   },
 };
 
-const Background = styled.main`
+const Container = styled.main`
   background: ${(props) => props.theme.colors.background};
   height: 100vh;
-  display: flex;
 `;
 
-export const App = () => {
+export const Root = () => {
   return (
     <ThemeProvider theme={theme}>
-      <Background>
-      </Background>
+      <Container>
+        <Navbar />
+      </Container>
     </ThemeProvider>
   );
 };
 
-export default App;
+export default Root;
