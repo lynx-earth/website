@@ -3,7 +3,7 @@ import { Paw } from "@styled-icons/ionicons-outline";
 import { NavLink } from "react-router-dom";
 
 const Nav = styled.nav`
-  height: 7rem;
+  height: 10vh;
   display: flex;
   align-items: center;
   padding-left: 2rem;
@@ -35,6 +35,7 @@ const Menu = styled.div`
   display: flex;
   gap: 4rem;
   margin: auto;
+  padding-right: 8rem;
 `;
 
 const MenuLink = styled(NavLink)`
