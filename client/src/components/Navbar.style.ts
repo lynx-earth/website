@@ -6,7 +6,8 @@ const Nav = styled.nav`
   height: 7rem;
   display: flex;
   align-items: center;
-  margin-left: 2rem;
+  padding-left: 2rem;
+  background: ${(props) => props.theme.colors.background};
 `;
 
 const Logo = styled(NavLink)`

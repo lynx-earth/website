@@ -1,5 +1,6 @@
-import styled from "styled-components";
+import { Route, Routes } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
+import Landing from "./components/Landing";
 import Navbar from "./components/Navbar";
 
 const theme = {
@@ -16,19 +17,15 @@ const theme = {
   },
 };
 
-const Container = styled.main`
-  background: ${(props) => props.theme.colors.background};
-  height: 100vh;
-`;
-
-export const Root = () => {
+const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <Container>
-        <Navbar />
-      </Container>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Landing />}></Route>
+      </Routes>
     </ThemeProvider>
   );
 };
 
-export default Root;
+export default App;
