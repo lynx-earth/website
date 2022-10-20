@@ -2,12 +2,17 @@ import { Route, Routes } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import Landing from "./components/Landing";
 import Navbar from "./components/Navbar";
+import { _theme } from "./globals";
 
-const theme = {
+const theme: _theme = {
   fonts: {
     body: "system-ui, sans-serif",
     heading: "sans-serif",
     monospace: "Menlo, monospace",
+  },
+  fontSize: {
+    header: "5rem",
+    text: "1.5rem"
   },
   colors: {
     background: "#333333",
