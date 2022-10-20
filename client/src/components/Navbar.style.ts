@@ -7,6 +7,7 @@ const Nav = styled.nav`
   display: flex;
   align-items: center;
   padding-left: 2rem;
+  font-family: ${(props) => props.theme.fonts.body};
   background: ${(props) => props.theme.colors.background};
 `;
 
