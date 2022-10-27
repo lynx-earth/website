@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import background from "../assets/layered-peaks-haikei.svg"
 
 const HeroContainer = styled.main`
   position: relative;

@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
-import Landing from "./components/Landing";
+import Landing from "./components/Hero";
 import { _theme } from "./globals";
 
 const theme: _theme = {

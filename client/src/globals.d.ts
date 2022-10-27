@@ -19,9 +19,9 @@ interface _theme {
   };
 }
 
-interface _landing {
+interface _hero {
   headline: string;
   text: string;
 }
 
-export { _theme, _landing };
+export { _theme, _hero };
