@@ -1,22 +1,30 @@
 import styled from "styled-components";
+import background from "../assets/layered-peaks-haikei.svg"
 
-const HeaderContainer = styled.header`
+const HeroContainer = styled.main`
   position: relative;
-  background: ${(props) => props.theme.colors.background};
-  height: 90vh;
+  height: 100vh;
   display: flex;
   overflow: hidden;
 `;
 
-const Header = styled.h1`
-  width: 45%;
-  color: ${(props) => props.theme.colors.primary};
+const HeroTitleContainer = styled.div`
+  width: 50vw;
+  background: ${(props) => props.theme.colors.background_light};
+  display: flex;
+  flex-direction: column;
+`;
+
+const HeroTitle = styled.h1`
+  width: 65%;
+  color: ${(props) => props.theme.colors.text_dark};
   font-size: ${(props) => props.theme.fontSize.header};
   font-weight: bold;
-  margin: 10rem 0 0 8rem;
+  margin: auto;
+  padding-right: 2rem;
 
   span {
-    color: ${(props) => props.theme.colors.text};
+    color: ${(props) => props.theme.colors.primary};
   }
 
   small {
@@ -28,11 +36,19 @@ const Header = styled.h1`
   }
 `;
 
-const HeaderLogo = styled.img`
-  position: absolute;
-  height: 145%;
-  top: -9rem;
-  right: -17rem;
+const HeroLogoContainer = styled.div`
+  width: 50vw;
+  background: ${(props) => props.theme.colors.background_dark};
 `;
 
-export { HeaderContainer, Header, HeaderLogo };
+const HeroLogo = styled.img`
+  height: 100%;
+`;
+
+export {
+  HeroContainer,
+  HeroTitleContainer,
+  HeroTitle,
+  HeroLogoContainer,
+  HeroLogo,
+};

@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import Landing from "./components/Landing";
-import Navbar from "./components/Navbar";
 import { _theme } from "./globals";
 
 const theme: _theme = {
@@ -15,17 +14,19 @@ const theme: _theme = {
     text: "1.5rem"
   },
   colors: {
-    background: "#333333",
-    text: "#f1f1f1",
+    background_light: "#f1e6c3",
+    background_dark: "#20252c",
+    text_light: "#DDDDDD",
+    text_dark: "#20252c",
     primary: "#f16638",
     secondary: "#6d3597",
+    tertiary: "#30475E",
   },
 };
 
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <Navbar />
       <Routes>
         <Route path="/" element={<Landing />}></Route>
       </Routes>

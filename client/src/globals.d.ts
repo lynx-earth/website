@@ -9,10 +9,13 @@ interface _theme {
     text: string;
   };
   colors: {
-    background: string;
-    text: string;
+    background_light: string;
+    background_dark: string;
+    text_light: string;
+    text_dark: string;
     primary: string;
     secondary: string;
+    tertiary?: string;
   };
 }
 

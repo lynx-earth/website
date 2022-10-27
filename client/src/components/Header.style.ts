@@ -2,13 +2,11 @@ import styled from "styled-components";
 import { Paw } from "@styled-icons/ionicons-outline";
 import { NavLink } from "react-router-dom";
 
-const Nav = styled.nav`
-  height: 10vh;
+const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
-  padding-left: 2rem;
+  justify-content: space-around;
   font-family: ${(props) => props.theme.fonts.body};
-  background: ${(props) => props.theme.colors.background};
 `;
 
 const Logo = styled(NavLink)`
@@ -20,7 +18,7 @@ const Logo = styled(NavLink)`
   h1 {
     font-size: 2.5rem;
     text-align: center;
-    color: ${(props) => props.theme.colors.text};
+    color: ${(props) => props.theme.colors.text_dark};
     font-weight: bolder;
   }
 `;
@@ -31,17 +29,21 @@ const Claw = styled(Paw)`
   color: ${(props) => props.theme.colors.primary};
 `;
 
-const Menu = styled.div`
+const NavMenu = styled.nav`
   display: flex;
-  gap: 4rem;
-  margin: auto;
-  padding-right: 8rem;
+  gap: 2rem;
 `;
 
-const MenuLink = styled(NavLink)`
-  color: ${(props) => props.theme.colors.text};
-  font-size: 1.8rem;
+const NavMenuLink = styled(NavLink)`
+  color: ${(props) => props.theme.colors.text_dark};
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
   text-decoration: none;
+
+  &:hover {
+    color: ${(props) => props.theme.colors.primary};
+    border-bottom: 1px solid ${(props) => props.theme.colors.primary};
+  }
 `;
 
-export { Nav, Logo, Claw, Menu, MenuLink };
+export { HeaderContainer, Logo, Claw, NavMenu, NavMenuLink };
