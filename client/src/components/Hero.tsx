@@ -7,7 +7,7 @@ import {
   HeroTitleContainer,
   HeroLogoContainer,
 } from "./Hero.style";
-import Logo from "../assets/lynx_face_transparent.png";
+import Logo from "../assets/lynx-face-transparent.png";
 import Header from "./Header";
 
 const heroData = _heroData as _hero[];

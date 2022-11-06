@@ -18,7 +18,7 @@ const Logo = styled(NavLink)`
   h1 {
     font-size: 2.5rem;
     text-align: center;
-    color: ${(props) => props.theme.colors.text_dark};
+    color: ${(props) => props.theme.colors.text_light};
     font-weight: bolder;
   }
 `;
@@ -35,7 +35,7 @@ const NavMenu = styled.nav`
 `;
 
 const NavMenuLink = styled(NavLink)`
-  color: ${(props) => props.theme.colors.text_dark};
+  color: ${(props) => props.theme.colors.text_light};
   font-size: 1.2rem;
   padding: 0.5rem 0;
   text-decoration: none;

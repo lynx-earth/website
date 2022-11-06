@@ -12,6 +12,7 @@ interface _theme {
     background_light: string;
     background_dark: string;
     text_light: string;
+    text_mid: string;
     text_dark: string;
     primary: string;
     secondary: string;
