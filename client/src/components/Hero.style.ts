@@ -3,8 +3,6 @@ import heroBackground from "../assets/hero-background.svg";
 
 const HeroContainer = styled.main`
   position: relative;
-  background-attachment: fixed;
-  position: relative;
   height: 100vh;
   display: flex;
   overflow: hidden;
@@ -16,9 +14,9 @@ const HeroContainer = styled.main`
     background-image: url(${heroBackground});
     background-repeat: no-repeat;
     background-size: cover;
-    content: "";
     will-change: transform;
     z-index: -1;
+    content: "";
   }
 `;
 
@@ -31,7 +29,7 @@ const HeroTitleContainer = styled.div`
 const HeroTitle = styled.h1`
   width: 75%;
   color: ${(props) => props.theme.colors.primary};
-  font-size: ${(props) => props.theme.fontSize.header};
+  font-size: ${(props) => props.theme.fontSize.h1};
   font-weight: bold;
   margin: auto;
   padding-right: 2rem;
@@ -45,7 +43,7 @@ const HeroTitle = styled.h1`
   }
 
   p {
-    font-size: ${(props) => props.theme.fontSize.text};
+    font-size: ${(props) => props.theme.fontSize.header_caption};
     color: ${(props) => props.theme.colors.text_mid};
   }
 `;
