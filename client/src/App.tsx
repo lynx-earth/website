@@ -10,8 +10,10 @@ const theme: _theme = {
     monospace: "Menlo, monospace",
   },
   fontSize: {
-    header: "5rem",
-    text: "1.5rem",
+    h1: "5rem",
+    h2: "3rem",
+    header_caption: "1.5rem",
+    text: "1rem",
   },
   colors: {
     background_light: "#efefef",

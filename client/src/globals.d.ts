@@ -5,7 +5,9 @@ interface _theme {
     monospace: string;
   };
   fontSize: {
-    header: string;
+    h1: string;
+    h2: string;
+    header_caption: string;
     text: string;
   };
   colors: {
@@ -25,4 +27,10 @@ interface _hero {
   text: string;
 }
 
-export { _theme, _hero };
+interface _about {
+  title: string;
+  text1: string;
+  text2: string;
+}
+
+export { _theme, _hero, _about };
