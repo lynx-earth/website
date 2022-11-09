@@ -32,11 +32,13 @@ const AboutInfoContainer = styled.article`
 
 const AboutInfoTitle = styled.h2`
   width: 70%;
+  color: ${(props) => props.theme.colors.tertiary};
   font-size: ${(props) => props.theme.fontSize.h2};
 `;
 
 const AboutInfoText = styled.p`
   width: 70%;
+  color: ${(props) => props.theme.colors.text_dark};
   font-size: ${(props) => props.theme.fontSize.text};
   line-height: 1.5;
 `;
