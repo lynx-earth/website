@@ -1,7 +1,34 @@
 import { Route, Routes } from "react-router-dom";
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider, createGlobalStyle } from "styled-components";
+import reset from "styled-reset";
+import Header from "./components/Header";
 import { _theme } from "./globals";
 import Home from "./pages/Home";
+
+const GlobalStyle = createGlobalStyle`
+  ${reset};
+  html {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+`;
 
 const theme: _theme = {
   fonts: {
@@ -31,6 +58,8 @@ const theme: _theme = {
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <Header />
       <Routes>
         <Route path="/" element={<Home />}></Route>
       </Routes>
