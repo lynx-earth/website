@@ -7,6 +7,7 @@ interface _theme {
   fontSize: {
     h1: string;
     h2: string;
+    h3: string;
     header_caption: string;
     text: string;
   };
@@ -33,4 +34,13 @@ interface _about {
   text2: string;
 }
 
-export { _theme, _hero, _about };
+interface _contact {
+  email: string;
+  phone: string;
+  twitter: string;
+  discord: string;
+  address_en: string;
+  address_jp: string;
+}
+
+export { _theme, _hero, _about, _contact };

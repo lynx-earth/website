@@ -12,6 +12,7 @@ const theme: _theme = {
   fontSize: {
     h1: "5rem",
     h2: "3rem",
+    h3: "1.5rem",
     header_caption: "1.5rem",
     text: "1rem",
   },
