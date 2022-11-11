@@ -28,13 +28,14 @@ const AboutInfoContainer = styled.article`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 2rem;
 `;
 
 const AboutInfoTitle = styled.h2`
   width: 70%;
   color: ${(props) => props.theme.colors.tertiary};
   font-size: ${(props) => props.theme.fontSize.h2};
+  font-weight: bold;
+  padding-bottom: 2rem;
 `;
 
 const AboutInfoText = styled.p`
@@ -42,6 +43,7 @@ const AboutInfoText = styled.p`
   color: ${(props) => props.theme.colors.text_dark};
   font-size: ${(props) => props.theme.fontSize.text};
   line-height: 1.5;
+  padding-bottom: 2rem;
 `;
 
 export {

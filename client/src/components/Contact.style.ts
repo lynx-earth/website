@@ -35,6 +35,7 @@ const Title = styled.h3`
   width: 70%;
   color: ${(props) => props.theme.colors.text_light};
   font-size: ${(props) => props.theme.fontSize.h3};
+  font-weight: bold;
 `;
 
 const Address = styled.p`
@@ -42,6 +43,7 @@ const Address = styled.p`
   display: flex;
   color: ${(props) => props.theme.colors.text_light};
   font-size: ${(props) => props.theme.fontSize.text};
+  padding-top: 2rem;
 `;
 
 const ContactInfo = styled.div`

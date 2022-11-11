@@ -16,7 +16,7 @@ const Hero = () => {
   return (
     <HeroContainer>
       <HeroTitleContainer>
-        <Header />
+        {/* <Header /> */}
         <HeroTitle>
           {heroData[0].headline[0]}
           <br />
