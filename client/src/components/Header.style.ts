@@ -2,11 +2,21 @@ import styled from "styled-components";
 import { Paw } from "@styled-icons/ionicons-outline";
 import { NavLink } from "react-router-dom";
 
-const HeaderContainer = styled.header`
+interface HeaderContainerProps {
+  isScrolled: boolean;
+}
+
+const HeaderContainer = styled.header<HeaderContainerProps>`
+  position: fixed;
+  z-index: 1;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
   font-family: ${(props) => props.theme.fonts.body};
+  gap: 7rem;
+  padding: 1rem 0 1rem 7rem;
+  background-color: ${(props) => (props.isScrolled ? "#111111EA" : "")};
+  transition: background-color 0.2s;
 `;
 
 const Logo = styled(NavLink)`

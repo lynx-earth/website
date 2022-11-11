@@ -1,9 +1,17 @@
-import {HeaderContainer, Logo, Claw, NavMenu, NavMenuLink} from "./Header.style";
+import {
+  HeaderContainer,
+  Logo,
+  Claw,
+  NavMenu,
+  NavMenuLink,
+} from "./Header.style";
+import { useScroll } from "../hooks/useScroll";
 
 const Header = () => {
+  const { isScrolled } = useScroll();
 
   return (
-    <HeaderContainer>
+    <HeaderContainer isScrolled={isScrolled}>
       <Logo to={"/"}>
         <Claw />
         <h1>Lynx</h1>
