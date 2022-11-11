@@ -1,22 +1,29 @@
 import styled from "styled-components";
-import { Mail, Phone } from "@styled-icons/entypo";
 
 const ContactSectionContainer = styled.footer`
   position: relative;
-  height: 60vh;
+  height: 70vh;
   display: flex;
   overflow: hidden;
+  justify-content: center;
 `;
 
 const GoogleMapContainer = styled.article`
   width: 50%;
-  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  iframe {
+    width: 80%;
+    height: 80%;
+  }
 `;
 
 const GoogleMap = styled.div``;
 
 const ContactInfoContainer = styled.article`
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,6 +38,7 @@ const Title = styled.h3`
 `;
 
 const Address = styled.p`
+  width: 70%;
   display: flex;
   color: ${(props) => props.theme.colors.text_light};
   font-size: ${(props) => props.theme.fontSize.text};
