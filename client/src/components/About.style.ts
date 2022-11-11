@@ -28,6 +28,7 @@ const AboutInfoContainer = styled.article`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2rem;
 `;
 
 const AboutInfoTitle = styled.h2`
