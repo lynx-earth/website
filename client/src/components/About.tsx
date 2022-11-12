@@ -5,6 +5,7 @@ import {
   AboutInfoContainer,
   AboutInfoTitle,
   AboutInfoText,
+  Underlay,
 } from "./About.style";
 import _aboutData from "../data/about.json";
 import { _about } from "../globals";
@@ -16,6 +17,7 @@ const aboutData = _aboutData as _about[];
 const About = () => {
   return (
     <Element name="about">
+      <Underlay />
       <AboutSectionContainer>
         <AboutImageContainer>
           <AboutImage src={space} />

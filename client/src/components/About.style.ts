@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import aboutBackground from "../assets/about-background.svg";
+import aboutBackground from "../assets/about-background1.svg";
 
 const AboutSectionContainer = styled.section`
   position: relative;
@@ -9,6 +9,18 @@ const AboutSectionContainer = styled.section`
   background-image: url(${aboutBackground});
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 2rem;
+  margin: 2rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+`;
+
+const Underlay = styled.div`
+  position: absolute;
+  top: 150%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #f5f5f5;
 `;
 
 const AboutImageContainer = styled.article`
@@ -18,7 +30,6 @@ const AboutImageContainer = styled.article`
 
 const AboutImage = styled.img`
   width: 70%;
-  border-radius: 1rem;
   margin-left: 4rem;
 `;
 
@@ -53,4 +64,5 @@ export {
   AboutInfoContainer,
   AboutInfoTitle,
   AboutInfoText,
+  Underlay,
 };
