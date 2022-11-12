@@ -28,11 +28,17 @@ const Header = () => {
           spy={true}
           smooth={true}
           duration={500}
-          offset={-98}
+          offset={-150}
         >
           About
         </NavMenuLink>
-        <NavMenuLink to={"solutions"} spy={true} smooth={true} duration={500}>
+        <NavMenuLink
+          to={"solutions"}
+          spy={true}
+          smooth={true}
+          duration={500}
+          offset={-40}
+        >
           Solutions
         </NavMenuLink>
         <NavMenuLink to={"contact"} spy={true} smooth={true} duration={1000}>
