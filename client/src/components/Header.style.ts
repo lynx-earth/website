@@ -56,6 +56,10 @@ const NavMenuLink = styled(Link)`
   padding: 0.5rem 0;
   text-decoration: none;
 
+  :hover {
+    cursor: pointer;
+  }
+
   ::after {
     content: "";
     position: absolute;

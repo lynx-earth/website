@@ -23,9 +23,21 @@ const Header = () => {
         <h1>Lynx</h1>
       </Logo>
       <NavMenu>
-        <NavMenuLink to={"about"}>About</NavMenuLink>
-        <NavMenuLink to={"solutions"}>Solutions</NavMenuLink>
-        <NavMenuLink to={"contact"}>Contact</NavMenuLink>
+        <NavMenuLink
+          to={"about"}
+          spy={true}
+          smooth={true}
+          duration={500}
+          offset={-98}
+        >
+          About
+        </NavMenuLink>
+        <NavMenuLink to={"solutions"} spy={true} smooth={true} duration={500}>
+          Solutions
+        </NavMenuLink>
+        <NavMenuLink to={"contact"} spy={true} smooth={true} duration={1000}>
+          Contact
+        </NavMenuLink>
       </NavMenu>
     </HeaderContainer>
   );
