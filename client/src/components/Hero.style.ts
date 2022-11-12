@@ -30,7 +30,7 @@ const HeroTitle = styled.h1`
   color: ${(props) => props.theme.colors.primary};
   font-size: ${(props) => props.theme.fontSize.h1};
   font-weight: bold;
-  margin-left: 7rem;
+  margin-left: 10rem;
 
   span {
     color: ${(props) => props.theme.colors.text_light};

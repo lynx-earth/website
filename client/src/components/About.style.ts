@@ -11,7 +11,7 @@ const AboutSectionContainer = styled.section`
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 2rem;
-  margin: 5rem;
+  margin: 2rem 10rem 0 10rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 `;
 
@@ -19,7 +19,7 @@ const Underlay = styled.div`
   position: absolute;
   top: 150%;
   width: 100%;
-  height: 145%;
+  height: 135%;
   z-index: -1;
   background-color: ${(props) => props.theme.colors.background_light};
   background-image: url(${solutionsBackground});
@@ -44,6 +44,7 @@ const AboutInfoContainer = styled.article`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-left: 2rem;
 `;
 
 const AboutInfoTitle = styled.h2`
@@ -59,7 +60,7 @@ const AboutInfoText = styled.p`
   color: ${(props) => props.theme.colors.tertiary};
   font-size: ${(props) => props.theme.fontSize.text};
   line-height: 1.5;
-  padding-bottom: 2rem;
+  padding-bottom: 1.2rem;
 `;
 
 export {

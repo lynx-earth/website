@@ -15,7 +15,7 @@ const HeaderContainer = styled.header<HeaderContainerProps>`
   align-items: center;
   font-family: ${(props) => props.theme.fonts.body};
   gap: 7rem;
-  padding: 1rem 0 1rem 7rem;
+  padding: 1rem 0 1rem 10rem;
   background-color: ${(props) => (props.isScrolled ? "#111111EA" : "")};
   transition: background-color 0.2s;
 `;
