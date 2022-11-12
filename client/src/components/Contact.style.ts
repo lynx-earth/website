@@ -6,7 +6,6 @@ const ContactSectionContainer = styled.footer`
   display: flex;
   overflow: hidden;
   justify-content: center;
-  margin-top: 4rem;
 `;
 
 const GoogleMapContainer = styled.article`

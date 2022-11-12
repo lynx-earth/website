@@ -11,7 +11,7 @@ const AboutSectionContainer = styled.section`
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 2rem;
-  margin: 2rem;
+  margin: 5rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 `;
 
@@ -33,8 +33,8 @@ const AboutImageContainer = styled.article`
 `;
 
 const AboutImage = styled.img`
-  width: 70%;
-  margin-left: 4rem;
+  width: 75%;
+  margin-left: 3rem;
   border-radius: 1rem;
 `;
 
