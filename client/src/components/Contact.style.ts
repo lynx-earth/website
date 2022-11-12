@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 const ContactSectionContainer = styled.footer`
   position: relative;
-  height: 70vh;
+  height: 75vh;
   display: flex;
   overflow: hidden;
   justify-content: center;
+  margin-top: 4rem;
 `;
 
 const GoogleMapContainer = styled.article`
@@ -17,6 +18,8 @@ const GoogleMapContainer = styled.article`
   iframe {
     width: 80%;
     height: 80%;
+    border-radius: 2rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
 `;
 
