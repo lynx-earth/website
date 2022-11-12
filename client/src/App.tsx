@@ -44,9 +44,9 @@ const theme: _theme = {
     text: "1rem",
   },
   colors: {
-    background_light: "#efefef",
+    background_light: "#f5f5f5",
     background_dark: "#20252c",
-    text_light: "#DDDDDD",
+    text_light: "#f5f5f5",
     text_mid: "#b0b0b0",
     text_dark: "#20252c",
     primary: "#f16638",
