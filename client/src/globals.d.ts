@@ -43,4 +43,9 @@ interface _contact {
   address_jp: string;
 }
 
-export { _theme, _hero, _about, _contact };
+interface _solutions {
+  title: string;
+  subtitle: string;
+}
+
+export { _theme, _hero, _about, _contact, _solutions };
