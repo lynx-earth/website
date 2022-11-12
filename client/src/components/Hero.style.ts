@@ -45,6 +45,7 @@ const HeroTitle = styled.h1`
     line-height: 2rem;
     font-size: ${(props) => props.theme.fontSize.header_caption};
     color: ${(props) => props.theme.colors.text_mid};
+    font-weight: normal;
   }
 `;
 
