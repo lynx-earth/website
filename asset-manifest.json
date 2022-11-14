@@ -1,19 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.64a96105.js",
+    "main.js": "/static/js/main.01ea1c4a.js",
     "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/rice-field.jpg": "/static/media/rice-field.9a675f48bfc0d2f7b4c7.jpg",
+    "static/media/forest.jpg": "/static/media/forest.6d56df14eee5a64e4d9d.jpg",
+    "static/media/solar-panel.jpg": "/static/media/solar-panel.90bfdb1dea6d48588994.jpg",
     "static/media/space.jpg": "/static/media/space.de5659898d3bfc5eb8ea.jpg",
     "static/media/lynx-face-transparent.png": "/static/media/lynx-face-transparent.f55af06d893abd0f04c2.png",
+    "static/media/about-background1.svg": "/static/media/about-background1.4207c6e89c5ee7e5a8c0ca03ea39157b.svg",
     "static/media/hero-background.svg": "/static/media/hero-background.20bdb214534ee5ea76f20f43dd815984.svg",
+    "static/media/solutions-background.svg": "/static/media/solutions-background.1ac41a2289c66ca1e8e9e18d7d87bba5.svg",
     "index.html": "/index.html",
-    "static/media/about-background.svg": "/static/media/about-background.ef3c46362359821455b8d455067b6bdd.svg",
     "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.64a96105.js.map": "/static/js/main.64a96105.js.map",
+    "main.01ea1c4a.js.map": "/static/js/main.01ea1c4a.js.map",
     "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.64a96105.js"
+    "static/js/main.01ea1c4a.js"
   ]
 }
