@@ -57,7 +57,7 @@ const HeroLogoContainer = styled.div`
 const HeroLogo = styled.img`
   position: absolute;
   top: -10%;
-  right: -8%;
+  right: 5%;
   height: 100%;
 `;
 
