@@ -1,27 +1,14 @@
-import {
-  HeaderContainer,
-  Logo,
-  Claw,
-  NavMenu,
-  NavMenuLink,
-} from "./Header.style";
+import { HeaderContainer, NavMenu, NavMenuLink } from "./Header.style";
 import { useScroll } from "../hooks/useScroll";
-import { animateScroll as scroll } from "react-scroll";
+import Logo from "./Logo";
 
 const Header = () => {
   const { isScrolled } = useScroll();
 
   return (
     <HeaderContainer isScrolled={isScrolled}>
-      <Logo
-        to="/"
-        onClick={() => {
-          scroll.scrollToTop();
-        }}
-      >
-        <Claw />
-        <h1>Lynx</h1>
-      </Logo>
+      <Logo />
+
       <NavMenu>
         <NavMenuLink
           to={"about"}

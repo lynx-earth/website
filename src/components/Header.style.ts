@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Paw } from "@styled-icons/ionicons-outline";
 // import { NavLink } from "react-router-dom";
 import { Link } from "react-scroll";
 
@@ -18,30 +17,6 @@ const HeaderContainer = styled.header<HeaderContainerProps>`
   padding: 1rem 0 1rem 10rem;
   background-color: ${(props) => (props.isScrolled ? "#111111EA" : "")};
   transition: background-color 0.2s;
-`;
-
-const Logo = styled(Link)`
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  text-decoration: none;
-
-  h1 {
-    font-size: 2.5rem;
-    text-align: center;
-    color: ${(props) => props.theme.colors.text_light};
-    font-weight: bolder;
-  }
-
-  :hover {
-    cursor: pointer;
-  }
-`;
-
-const Claw = styled(Paw)`
-  width: 4rem;
-  height: 4rem;
-  color: ${(props) => props.theme.colors.primary};
 `;
 
 const NavMenu = styled.nav`
@@ -79,4 +54,4 @@ const NavMenuLink = styled(Link)`
   }
 `;
 
-export { HeaderContainer, Logo, Claw, NavMenu, NavMenuLink };
+export { HeaderContainer, NavMenu, NavMenuLink };
