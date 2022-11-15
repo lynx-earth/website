@@ -4,6 +4,8 @@ import reset from "styled-reset";
 import Header from "./components/Header";
 import { _theme } from "./globals";
 import Home from "./pages/Home";
+import { createContext } from "react";
+import { useWindowSize } from "./hooks/useWindowSize";
 
 const GlobalStyle = createGlobalStyle`
   ${reset};
@@ -55,15 +57,21 @@ const theme: _theme = {
   },
 };
 
+export const WindowSizeContext = createContext([0, 0]);
+
 const App = () => {
+  const [windowWidth, windowHeight] = useWindowSize();
+
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-      </Routes>
-    </ThemeProvider>
+    <WindowSizeContext.Provider value={[windowWidth, windowHeight]}>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+        </Routes>
+      </ThemeProvider>
+    </WindowSizeContext.Provider>
   );
 };
 
