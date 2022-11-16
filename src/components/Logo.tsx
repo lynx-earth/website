@@ -23,9 +23,6 @@ const BrandLogo = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  @media (min-width: 768px) {
-    gap: 0.5rem;
-  }
 
   h1 {
     margin-left: 0.5rem;
@@ -51,7 +48,7 @@ const Claw = styled(Paw)`
   color: ${(props) => props.theme.colors.primary};
 
   /* Small Screens & Laptops */
-  @media (min-width: 600px) {
+  @media (min-width: 768px) {
     width: 4rem;
     height: 4rem;
   }

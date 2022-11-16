@@ -1,18 +1,46 @@
 import styled from "styled-components";
-import aboutBackground from "../assets/about-background1.svg";
+import aboutBackground from "../assets/about-background2.svg";
+import mobileAboutBackground from "../assets/about-background3.svg";
 import solutionsBackground from "../assets/solutions-background.svg";
 
 const AboutSectionContainer = styled.section`
   position: relative;
-  height: 70vh;
+  height: 90vh;
   display: flex;
+  flex-direction: column-reverse;
   overflow: hidden;
-  background-image: url(${aboutBackground});
-  background-repeat: no-repeat;
-  background-size: cover;
   border-radius: 2rem;
-  margin: 2rem 10rem 0 10rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin: 1rem;
+
+  ::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: url(${mobileAboutBackground});
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  @media (min-width: 768px) {
+    height: 70vh;
+    flex-direction: row;
+    margin: 2rem 10rem 0 10rem;
+    border-radius: 2rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    ::before {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      content: "";
+      background-image: url(${aboutBackground});
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
 `;
 
 const Underlay = styled.div`
@@ -28,39 +56,67 @@ const Underlay = styled.div`
 `;
 
 const AboutImageContainer = styled.article`
-  width: 46%;
-  margin: auto;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    flex-basis: 46%;
+    margin: auto;
+  }
 `;
 
 const AboutImage = styled.img`
   width: 75%;
-  margin-left: 3rem;
   border-radius: 1rem;
+
+  @media (min-width: 768px) {
+    margin-left: 3rem;
+  }
 `;
 
 const AboutInfoContainer = styled.article`
-  width: 54%;
+  flex-basis: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 2rem;
+  padding: 2rem;
+
+  @media (min-width: 768px) {
+    width: 48%;
+    padding-left: 4rem;
+  }
 `;
 
 const AboutInfoTitle = styled.h2`
   width: 70%;
   color: ${(props) => props.theme.colors.text_dark};
-  font-size: ${(props) => props.theme.fontSize.h2};
+  font-size: 2rem;
   font-weight: bold;
-  padding-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  @media (min-width: 768px) {
+    width: 80%;
+    font-size: ${(props) => props.theme.fontSize.h2};
+    text-align: start;
+  }
 `;
 
 const AboutInfoText = styled.p`
-  width: 70%;
+  width: 100%;
   color: ${(props) => props.theme.colors.tertiary};
-  font-size: ${(props) => props.theme.fontSize.text};
+  font-size: 0.9rem;
   line-height: 1.5;
-  padding-bottom: 1.2rem;
+  margin-bottom: 1rem;
+
+  @media (min-width: 768px) {
+    width: 80%;
+    font-size: ${(props) => props.theme.fontSize.text};
+    margin-bottom: 1.2rem;
+  }
 `;
 
 export {

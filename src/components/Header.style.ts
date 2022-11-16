@@ -22,7 +22,7 @@ const HeaderContainer = styled.header<HeaderProps>`
   padding: 1rem 0 1rem 1rem;
 
   @media (min-width: 768px) {
-    padding: 1rem 0 1rem 10rem;
+    padding: 1rem 0 1rem 9rem;
   }
 `;
 
