@@ -22,14 +22,22 @@ export default Logo;
 const BrandLogo = styled(Link)`
   display: flex;
   align-items: center;
-  gap: 1rem;
   text-decoration: none;
+  @media (min-width: 768px) {
+    gap: 0.5rem;
+  }
 
   h1 {
-    font-size: 2.5rem;
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
     text-align: center;
     color: ${(props) => props.theme.colors.text_light};
     font-weight: bolder;
+
+    /* Small Screens & Laptops */
+    @media (min-width: 768px) {
+      font-size: 2.5rem;
+    }
   }
 
   :hover {
@@ -38,7 +46,13 @@ const BrandLogo = styled(Link)`
 `;
 
 const Claw = styled(Paw)`
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   color: ${(props) => props.theme.colors.primary};
+
+  /* Small Screens & Laptops */
+  @media (min-width: 600px) {
+    width: 4rem;
+    height: 4rem;
+  }
 `;
