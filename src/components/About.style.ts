@@ -47,12 +47,16 @@ const Underlay = styled.div`
   position: absolute;
   top: 150%;
   width: 100%;
-  height: 135%;
+  height: 270%;
   z-index: -1;
   background-color: ${(props) => props.theme.colors.background_light};
   background-image: url(${solutionsBackground});
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: 768px) {
+    height: 135%;
+  }
 `;
 
 const AboutImageContainer = styled.article`

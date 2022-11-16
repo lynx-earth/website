@@ -5,11 +5,18 @@ interface SolutionsProps {
 }
 
 const SolutionsSectionContainer = styled.section`
-  height: 100vh;
   display: flex;
   overflow: hidden;
-  justify-content: space-evenly;
-  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  padding-top: 2rem;
+
+  @media (min-width: 768px) {
+    height: 100vh;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 `;
 
 const Solution = styled.article<SolutionsProps>`
@@ -18,19 +25,24 @@ const Solution = styled.article<SolutionsProps>`
   align-items: center;
   height: 70%;
   flex-basis: 25%;
+  padding: 2.5rem;
 
-  ${(props) =>
-    props.solution === 1
-      ? css`
-          margin-top: 0rem;
-        `
-      : props.solution === 2
-      ? css`
-          margin-top: 8rem;
-        `
-      : css`
-          margin-top: 16rem;
-        `}
+  @media (min-width: 768px) {
+    margin: 0;
+
+    ${(props) =>
+      props.solution === 1
+        ? css`
+            margin-top: 0rem;
+          `
+        : props.solution === 2
+        ? css`
+            margin-top: 8rem;
+          `
+        : css`
+            margin-top: 16rem;
+          `}
+  }
 `;
 
 const SolutionImage = styled.img`
@@ -40,13 +52,17 @@ const SolutionImage = styled.img`
 `;
 
 const SolutionTitle = styled.h3`
-  width: 75%;
+  width: 90%;
   height: 3.5rem;
   font-size: ${(props) => props.theme.fontSize.h3};
   color: ${(props) => props.theme.colors.text_dark};
   font-weight: bold;
   margin-top: 2rem;
   text-align: center;
+
+  @media (min-width: 768px) {
+    width: 75%;
+  }
 `;
 
 const SolutionText = styled.p`
