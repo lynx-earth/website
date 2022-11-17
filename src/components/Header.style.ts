@@ -12,7 +12,7 @@ interface MobileNavProps {
 
 const HeaderContainer = styled.header<HeaderProps>`
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   width: 100%;
   display: flex;
   align-items: center;
@@ -22,6 +22,10 @@ const HeaderContainer = styled.header<HeaderProps>`
   padding: 1rem 0 1rem 1rem;
 
   @media (min-width: 768px) {
+    padding: 1rem 0 1rem 5rem;
+  }
+
+  @media (min-width: 1390px) {
     padding: 1rem 0 1rem 9rem;
   }
 `;

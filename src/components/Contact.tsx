@@ -11,8 +11,8 @@ import _contactData from "../data/contact.json";
 import { _contact } from "../globals";
 import { Mail, Phone } from "@styled-icons/entypo";
 import { Twitter, Discord } from "@styled-icons/remix-line";
-import { Paw } from "@styled-icons/ionicons-outline";
 import { Element } from "react-scroll";
+import Logo from "./Logo";
 
 const contactData = _contactData as _contact[];
 
@@ -25,8 +25,8 @@ const Contact = () => {
           <ContactInfo>
             <Mail size={20} />
             &nbsp;&nbsp;{contactData[0].email}
-            <br />
-            <Phone size={20} />
+            {/* <br /> */}
+            {/* <Phone size={20} /> */}
             &nbsp;&nbsp;{contactData[0].phone}
           </ContactInfo>
           <Socials>

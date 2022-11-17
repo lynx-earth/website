@@ -11,7 +11,7 @@ const ContactSectionContainer = styled.footer`
   margin: 2rem 0;
 
   @media (min-width: 768px) {
-    margin: 0;
+    margin: 3rem 0;
     height: 75vh;
     flex-direction: row;
   }
@@ -41,8 +41,6 @@ const GoogleMapContainer = styled.article`
   }
 `;
 
-const GoogleMap = styled.div``;
-
 const ContactInfoContainer = styled.article`
   flex-basis: 40%;
   display: flex;
@@ -62,6 +60,7 @@ const Title = styled.h3`
 const Address = styled.p`
   width: 70%;
   display: flex;
+  line-height: 1.5rem;
   color: ${(props) => props.theme.colors.text_light};
   font-size: ${(props) => props.theme.fontSize.text};
   padding-top: 2rem;
@@ -85,7 +84,6 @@ const Socials = styled.div`
 export {
   ContactSectionContainer,
   GoogleMapContainer,
-  GoogleMap,
   ContactInfoContainer,
   Title,
   Address,
