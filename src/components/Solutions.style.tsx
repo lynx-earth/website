@@ -11,7 +11,7 @@ const SolutionsSectionContainer = styled.section`
   flex-direction: column;
   padding: 2rem;
 
-  @media (min-width: 821px) {
+  @media (min-width: 913px) {
     height: 100vh;
     flex-direction: row;
     justify-content: space-evenly;
@@ -25,13 +25,13 @@ const Solution = styled.article<SolutionsProps>`
   align-items: center;
   height: 70%;
   flex-basis: 25%;
-  padding: 0rem;
+  padding: 1rem 0rem;
 
-  @media (min-width: 391px) {
+  @media (min-width: 768px) {
     padding: 2rem 7rem;
   }
 
-  @media (min-width: 821px) {
+  @media (min-width: 913px) {
     padding: 0;
 
     ${(props) =>
@@ -72,9 +72,9 @@ const SolutionTitle = styled.h3`
 `;
 
 const SolutionText = styled.p`
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: ${(props) => props.theme.colors.tertiary};
-  line-height: 1.5rem;
+  line-height: 1.5;
   padding: 1rem;
 
   @media (min-width: 768px) {

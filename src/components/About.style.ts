@@ -42,16 +42,31 @@ const Underlay = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media (min-width: 321px) {
-    height: 240%;
+  @media (min-width: 321px) and (min-height: 736px) {
+    height: 285%;
+  }
+
+  @media (min-width: 321px) and (min-height: 844px) {
+    height: 255%;
+  }
+
+  /* Surface Duo */
+  @media (min-width: 540px) and (min-height: 720px) {
+    height: 320%;
   }
 
   @media (min-width: 768px) {
     height: 135%;
   }
 
+  /* iPad Air */
   @media (min-height: 1180px) {
     height: 270%;
+  }
+
+  /* Surface Pro 7 */
+  @media (min-height: 912px) {
+    height: 260%;
   }
 `;
 
@@ -129,7 +144,7 @@ const AboutInfoText = styled.p`
 
   @media (min-width: 281px) {
     width: 90%;
-    font-size: ${(props) => props.theme.fontSize.text};
+    font-size: 0.8rem;
     margin-bottom: 1.2rem;
   }
 
