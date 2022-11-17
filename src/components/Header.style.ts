@@ -118,6 +118,7 @@ const MobileNavLink = styled(Link)`
   );
   background-size: 240%;
   transition: all 0.4s;
+
   &:hover,
   &:active {
     background-position: 100%;
@@ -146,7 +147,7 @@ const MenuLabel = styled.label`
   cursor: pointer;
 `;
 
-const MenuIcon = styled.span<MobileNavProps>`
+const MenuIcon = styled.button<MobileNavProps>`
   position: relative;
   display: inline-block;
   background-color: ${(props) =>
@@ -155,6 +156,7 @@ const MenuIcon = styled.span<MobileNavProps>`
   height: 3px;
   margin-top: 1.6rem;
   transition: all 0.3s;
+  border: none;
 
   &::before,
   &::after {

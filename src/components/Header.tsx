@@ -26,13 +26,17 @@ const Header = () => {
       <Logo />
       {windowWidth < 768 ? (
         <>
+          <NavBackground clicked={clicked} />
           <MenuLabel htmlFor="nav-toggle" onClick={handleClick}>
-            <MenuIcon clicked={clicked}>&nbsp;</MenuIcon>
+            <MenuIcon clicked={clicked} aria-controls="main-menu" />
           </MenuLabel>
-          <NavBackground clicked={clicked}></NavBackground>
 
-          <MobileNavMenu clicked={clicked}>
-            <MobileNavList>
+          <MobileNavMenu
+            clicked={clicked}
+            role="navigation"
+            aria-label="Main menu"
+          >
+            <MobileNavList id="main-menu">
               <li>
                 <MobileNavLink
                   onClick={handleClick}
