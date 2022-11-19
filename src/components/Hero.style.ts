@@ -71,30 +71,14 @@ const HeroTitle = styled.h1`
     font-size: 2rem;
   }
 
-  p {
-    padding-top: 2rem;
-    line-height: 2rem;
-    font-size: 1rem;
-    color: ${(props) => props.theme.colors.text_mid};
-    font-weight: normal;
-  }
-
   @media (min-width: 281px) {
     padding: 0 2rem;
     font-size: ${(props) => props.theme.fontSize.h2};
-
-    p {
-      font-size: 1.3rem;
-    }
   }
 
   @media (min-width: 768px) {
     padding: 0 10rem;
     font-size: 4rem;
-
-    p {
-      font-size: 1.2rem;
-    }
   }
 
   @media (min-width: 913px) {
@@ -110,6 +94,22 @@ const HeroTitle = styled.h1`
     padding: 0;
     font-size: ${(props) => props.theme.fontSize.h1};
     flex-direction: row;
+  }
+`;
+
+const HeroSubtitle = styled.p`
+  padding-top: 2rem;
+  line-height: 2rem;
+  font-size: 1rem;
+  color: ${(props) => props.theme.colors.text_mid};
+  font-weight: normal;
+
+  @media (min-width: 281px) {
+    font-size: 1.3rem;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 1.2rem;
   }
 `;
 
@@ -169,6 +169,7 @@ export {
   HeroContainer,
   HeroTitleContainer,
   HeroTitle,
+  HeroSubtitle,
   HeroLogoContainer,
   HeroLogo,
 };
