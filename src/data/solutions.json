@@ -1,14 +1,14 @@
 [
   {
     "title": "Rice Paddy Methane Avoidance",
-    "subtitle": "Wet rice agriculture generates 12% of global methane emissions, amounting to 1.5% of total GHG emissions. Lynx technology makes it possible to pass incentives directly to farmers, encouraging adoption of sustainable techniques and directly reducing methane."
+    "subtitle": "Wet rice agriculture generates 12% of total methane emissions, amounting to 1.5% of global GHGs. Lynx technology makes it possible to pass incentives directly to farmers, encouraging adoption of sustainable techniques and  reducing emitted methane."
   },
   {
-    "title": "Forest Growth Carbon Sequestration",
-    "subtitle": "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+    "title": "Forest Growth Monitoring",
+    "subtitle": "Satellite remote sensing is now an accepted methodology for monitoring carbon sequestration in Afforestation/Reforestation projects. By comparing satellite imagery over time, we are able to produce more accurate carbon removal estimates at a lower cost."
   },
   {
     "title": "Solar Panel Verification",
-    "subtitle": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+    "subtitle": "Absent smart meters, GHG avoidance from solar panels is generally roughly estimated. By verifying residential solar panels with satellite imagery, we can significantly improve accuracy over existing estimates."
   }
 ]
