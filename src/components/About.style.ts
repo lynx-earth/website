@@ -19,7 +19,6 @@ const AboutSection = styled.section`
   background-color: ${(props) => props.theme.colors.background_light};
 
   @media (min-width: 768px) {
-    height: 110vh;
     margin: 4rem;
   }
 

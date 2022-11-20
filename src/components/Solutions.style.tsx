@@ -5,17 +5,41 @@ interface SolutionsProps {
 }
 
 const SolutionsSectionContainer = styled.section`
+  position: relative;
   display: flex;
   overflow: hidden;
   height: 100%;
   flex-direction: column;
-  padding: 2rem;
+  padding: 5rem 1rem 1rem 1rem;
   background-color: ${(props) => props.theme.colors.background_light};
+
+  @media (min-width: 281px) {
+    padding: 5rem 2rem 2rem 2rem;
+  }
 
   @media (min-width: 913px) {
     height: 100vh;
     flex-direction: row;
     justify-content: space-evenly;
+    align-content: center;
+    padding: 8rem 0 0 0;
+  }
+
+  @media (min-width: 1440px) {
+    height: 85vh;
+  }
+`;
+
+const SolutionSectionTitle = styled.h2`
+  color: ${(props) => props.theme.colors.text_dark};
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  @media (min-width: 913px) {
+    position: absolute;
+    top: 5%;
   }
 `;
 
@@ -34,18 +58,18 @@ const Solution = styled.article<SolutionsProps>`
   @media (min-width: 913px) {
     padding: 0;
 
-    ${(props) =>
+    /* ${(props) =>
       props.solution === 1
         ? css`
             margin-top: 0rem;
           `
         : props.solution === 2
         ? css`
-            margin-top: 9rem;
+            margin-top: 8rem;
           `
         : css`
-            margin-top: 18rem;
-          `}
+            margin-top: 16rem;
+          `} */
   }
 `;
 
@@ -73,10 +97,14 @@ const SolutionTitle = styled.h3`
 `;
 
 const SolutionText = styled.p`
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: ${(props) => props.theme.colors.tertiary};
   line-height: 1.5;
   padding: 1rem;
+
+  @media (min-width: 281px) {
+    font-size: 0.8rem;
+  }
 
   @media (min-width: 768px) {
     font-size: ${(props) => props.theme.fontSize.text};
@@ -85,6 +113,7 @@ const SolutionText = styled.p`
 
 export {
   SolutionsSectionContainer,
+  SolutionSectionTitle,
   Solution,
   SolutionImage,
   SolutionTitle,
