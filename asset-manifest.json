@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.8155d55f.js",
+    "main.js": "/static/js/main.9238d34c.js",
     "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
     "static/media/rice-field.jpg": "/static/media/rice-field.9a675f48bfc0d2f7b4c7.jpg",
     "static/media/forest.jpg": "/static/media/forest.6d56df14eee5a64e4d9d.jpg",
@@ -9,16 +9,15 @@
     "static/media/space.jpg": "/static/media/space.de5659898d3bfc5eb8ea.jpg",
     "static/media/lynx-face-transparent.png": "/static/media/lynx-face-transparent.f55af06d893abd0f04c2.png",
     "static/media/hero-background.svg": "/static/media/hero-background.20bdb214534ee5ea76f20f43dd815984.svg",
-    "static/media/solutions-background.svg": "/static/media/solutions-background.1ac41a2289c66ca1e8e9e18d7d87bba5.svg",
     "static/media/about-background2.svg": "/static/media/about-background2.e650c22deb0324879f0ac5c85a499854.svg",
     "static/media/about-background3.svg": "/static/media/about-background3.0aa78967bf1399b60169947eabb093a1.svg",
     "index.html": "/index.html",
     "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.8155d55f.js.map": "/static/js/main.8155d55f.js.map",
+    "main.9238d34c.js.map": "/static/js/main.9238d34c.js.map",
     "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.8155d55f.js"
+    "static/js/main.9238d34c.js"
   ]
 }
