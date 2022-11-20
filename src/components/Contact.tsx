@@ -5,7 +5,7 @@ import {
   Title,
   Address,
   ContactInfo,
-  Socials,
+  // Socials,
 } from "./Contact.style";
 import _contactData from "../data/contact.json";
 import { _contact } from "../globals";
@@ -29,14 +29,14 @@ const Contact = () => {
             {/* <Phone size={20} /> */}
             &nbsp;&nbsp;{contactData[0].phone}
           </ContactInfo>
-          <Socials>
+          {/* <Socials>
             <a href={contactData[0].twitter} rel="noreferrer" target="_blank">
               <Twitter size={30} color={"white"} />
             </a>
             <a href={contactData[0].discord} rel="noreferrer" target="_blank">
               <Discord size={30} color={"white"} />
             </a>
-          </Socials>
+          </Socials> */}
           <Address>
             {contactData[0].address_en}
             <br />
