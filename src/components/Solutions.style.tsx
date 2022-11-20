@@ -10,12 +10,12 @@ const SolutionsSectionContainer = styled.section`
   height: 100%;
   flex-direction: column;
   padding: 2rem;
+  background-color: ${(props) => props.theme.colors.background_light};
 
   @media (min-width: 913px) {
     height: 100vh;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
   }
 `;
 
@@ -41,10 +41,10 @@ const Solution = styled.article<SolutionsProps>`
           `
         : props.solution === 2
         ? css`
-            margin-top: 8rem;
+            margin-top: 9rem;
           `
         : css`
-            margin-top: 16rem;
+            margin-top: 18rem;
           `}
   }
 `;
@@ -53,11 +53,12 @@ const SolutionImage = styled.img`
   width: 100%;
   max-height: 100%;
   border-radius: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 `;
 
 const SolutionTitle = styled.h3`
   width: 90%;
-  height: 2.5rem;
+  height: 1.5rem;
   font-size: ${(props) => props.theme.fontSize.h4};
   color: ${(props) => props.theme.colors.text_dark};
   font-weight: bold;
@@ -66,7 +67,7 @@ const SolutionTitle = styled.h3`
 
   @media (min-width: 768px) {
     width: 100%;
-    height: 3.5rem;
+    height: 2.5rem;
     font-size: ${(props) => props.theme.fontSize.h3};
   }
 `;

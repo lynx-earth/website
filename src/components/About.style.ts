@@ -1,18 +1,22 @@
 import styled from "styled-components";
 import aboutBackground from "../assets/about-background2.svg";
 import mobileAboutBackground from "../assets/about-background3.svg";
-import solutionsBackground from "../assets/solutions-background.svg";
 
 const AboutSectionContainer = styled.section`
   position: relative;
-  height: 110vh;
+  height: 80vh;
+  z-index: -1;
+`;
+
+const AboutSection = styled.section`
+  height: 100%;
   display: flex;
   flex-direction: column-reverse;
   overflow: hidden;
   border-radius: 2rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   margin: 1rem;
-  background-color: #f5f5f5;
+  background-color: ${(props) => props.theme.colors.background_light};
 
   @media (min-width: 768px) {
     height: 110vh;
@@ -33,41 +37,11 @@ const AboutSectionContainer = styled.section`
 
 const Underlay = styled.div`
   position: absolute;
-  top: 150%;
+  bottom: 0;
   width: 100%;
-  height: 260%;
-  z-index: -1;
+  height: 50%;
   background-color: ${(props) => props.theme.colors.background_light};
-  background-image: url(${solutionsBackground});
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  @media (min-width: 321px) and (min-height: 736px) {
-    height: 285%;
-  }
-
-  @media (min-width: 321px) and (min-height: 844px) {
-    height: 255%;
-  }
-
-  /* Surface Duo */
-  @media (min-width: 540px) and (min-height: 720px) {
-    height: 320%;
-  }
-
-  @media (min-width: 768px) {
-    height: 135%;
-  }
-
-  /* iPad Air */
-  @media (min-height: 1180px) {
-    height: 270%;
-  }
-
-  /* Surface Pro 7 */
-  @media (min-height: 912px) {
-    height: 260%;
-  }
+  z-index: -1;
 `;
 
 const AboutImageContainer = styled.article`
@@ -157,6 +131,7 @@ const AboutInfoText = styled.p`
 
 export {
   AboutSectionContainer,
+  AboutSection,
   AboutImageContainer,
   AboutImage,
   AboutInfoContainer,

@@ -1,5 +1,6 @@
 import {
   AboutSectionContainer,
+  AboutSection,
   AboutImageContainer,
   AboutImage,
   AboutInfoContainer,
@@ -17,16 +18,18 @@ const aboutData = _aboutData as _about[];
 const About = () => {
   return (
     <Element name="about">
-      <Underlay />
       <AboutSectionContainer>
-        <AboutImageContainer>
-          <AboutImage src={space} />
-        </AboutImageContainer>
-        <AboutInfoContainer>
-          <AboutInfoTitle>{aboutData[0].title}</AboutInfoTitle>
-          <AboutInfoText>{aboutData[0].text1}</AboutInfoText>
-          <AboutInfoText>{aboutData[0].text2}</AboutInfoText>
-        </AboutInfoContainer>
+        <Underlay />
+        <AboutSection>
+          <AboutImageContainer>
+            <AboutImage src={space} />
+          </AboutImageContainer>
+          <AboutInfoContainer>
+            <AboutInfoTitle>{aboutData[0].title}</AboutInfoTitle>
+            <AboutInfoText>{aboutData[0].text1}</AboutInfoText>
+            <AboutInfoText>{aboutData[0].text2}</AboutInfoText>
+          </AboutInfoContainer>
+        </AboutSection>
       </AboutSectionContainer>
     </Element>
   );
