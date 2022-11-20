@@ -19,14 +19,14 @@ const HeaderContainer = styled.header<HeaderProps>`
   font-family: ${(props) => props.theme.fonts.body};
   background-color: ${(props) => (props.isScrolled ? "#111111EA" : "")};
   transition: background-color 0.2s;
-  padding: 1rem 0 1rem 1rem;
+  padding: 2rem 0 2rem 1rem;
 
   @media (min-width: 768px) {
-    padding: 1rem 0 1rem 5rem;
+    padding: 2rem 0 2rem 5rem;
   }
 
   @media (min-width: 1390px) {
-    padding: 1rem 0 1rem 9rem;
+    padding: 2rem 0 2rem 9rem;
   }
 `;
 

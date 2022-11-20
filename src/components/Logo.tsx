@@ -11,7 +11,7 @@ const Logo = () => {
         scroll.scrollToTop();
       }}
     >
-      <Claw />
+      {/* <Claw /> */}
       <h1>Lynx</h1>
     </BrandLogo>
   );
@@ -23,6 +23,9 @@ const BrandLogo = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
+
+  /* TO BE REMOVED */
+  padding-left: 1rem;
 
   h1 {
     margin-left: 0.5rem;
@@ -42,14 +45,14 @@ const BrandLogo = styled(Link)`
   }
 `;
 
-const Claw = styled(Paw)`
-  width: 3rem;
-  height: 3rem;
-  color: ${(props) => props.theme.colors.primary};
+// const Claw = styled(Paw)`
+//   width: 3rem;
+//   height: 3rem;
+//   color: ${(props) => props.theme.colors.primary};
 
-  /* Small Screens & Laptops */
-  @media (min-width: 768px) {
-    width: 4rem;
-    height: 4rem;
-  }
-`;
+//   /* Small Screens & Laptops */
+//   @media (min-width: 768px) {
+//     width: 4rem;
+//     height: 4rem;
+//   }
+// `;
