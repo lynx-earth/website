@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Paw } from "@styled-icons/ionicons-outline";
+// import { Paw } from "@styled-icons/ionicons-outline";
 import { Link } from "react-scroll";
 import { animateScroll as scroll } from "react-scroll";
 

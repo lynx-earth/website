@@ -32,6 +32,10 @@ const AboutSection = styled.section`
     flex-direction: row;
     margin: 2rem 10rem 0 10rem;
   }
+
+  @media (min-width: 1920px) {
+    margin: 2rem 15rem 0 15rem;
+  }
 `;
 
 const Underlay = styled.div`
@@ -90,6 +94,10 @@ const AboutInfoContainer = styled.article`
   @media (min-width: 821px) {
     flex-basis: 50%;
     padding-left: 4rem;
+  }
+
+  @media (min-width: 1920px) {
+    padding: 2rem;
   }
 `;
 

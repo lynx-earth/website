@@ -9,10 +9,10 @@ import {
 } from "./Contact.style";
 import _contactData from "../data/contact.json";
 import { _contact } from "../globals";
-import { Mail, Phone } from "@styled-icons/entypo";
-import { Twitter, Discord } from "@styled-icons/remix-line";
+import { Mail } from "@styled-icons/entypo";
+// import { Twitter, Discord } from "@styled-icons/remix-line";
 import { Element } from "react-scroll";
-import Logo from "./Logo";
+// import Logo from "./Logo";
 
 const contactData = _contactData as _contact[];
 

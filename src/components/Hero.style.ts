@@ -95,6 +95,10 @@ const HeroTitle = styled.h1`
     font-size: ${(props) => props.theme.fontSize.h1};
     flex-direction: row;
   }
+
+  @media (min-width: 1920px) {
+    font-size: 7rem;
+  }
 `;
 
 const HeroSubtitle = styled.p`
@@ -110,6 +114,10 @@ const HeroSubtitle = styled.p`
 
   @media (min-width: 768px) {
     font-size: 1.2rem;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 1.5rem;
   }
 `;
 
