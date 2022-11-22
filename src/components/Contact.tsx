@@ -5,11 +5,12 @@ import {
   Title,
   Address,
   ContactInfo,
+  Email,
   // Socials,
 } from "./Contact.style";
 import _contactData from "../data/contact.json";
 import { _contact } from "../globals";
-import { Mail } from "@styled-icons/entypo";
+import { Mail as MailIcon } from "@styled-icons/entypo";
 // import { Twitter, Discord } from "@styled-icons/remix-line";
 import { Element } from "react-scroll";
 // import Logo from "./Logo";
@@ -23,8 +24,9 @@ const Contact = () => {
         <ContactInfoContainer>
           <Title>Contact Us</Title>
           <ContactInfo>
-            <Mail size={20} />
-            &nbsp;&nbsp;{contactData[0].email}
+            <MailIcon size={20} />
+            &nbsp;&nbsp;
+            <Email>{contactData[0].email}</Email>
             {/* <br /> */}
             {/* <Phone size={20} /> */}
             &nbsp;&nbsp;{contactData[0].phone}

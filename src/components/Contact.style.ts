@@ -67,10 +67,37 @@ const Address = styled.p`
 `;
 
 const ContactInfo = styled.div`
+  display: flex;
+  align-items: center;
   width: 70%;
   line-height: 2rem;
   color: ${(props) => props.theme.colors.text_light};
   font-size: ${(props) => props.theme.fontSize.text};
+`;
+
+const Email = styled.a.attrs((props) => ({
+  href: "mailto:contact@lynx.earth",
+}))`
+  position: relative;
+  color: inherit;
+
+  ::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: ${(props) => props.theme.colors.primary};
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  :hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 `;
 
 const Socials = styled.div`
@@ -88,5 +115,6 @@ export {
   Title,
   Address,
   ContactInfo,
+  Email,
   Socials,
 };
