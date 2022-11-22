@@ -32,7 +32,12 @@ const BrandLogo = styled(Link)`
     font-size: 1.5rem;
     text-align: center;
     color: ${(props) => props.theme.colors.text_light};
+    background: linear-gradient(0.25turn, #6d3597, #e94863, #f16638);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: bolder;
+    padding-bottom: 0.6rem;
 
     /* Small Screens & Laptops */
     @media (min-width: 768px) {
