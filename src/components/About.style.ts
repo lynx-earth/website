@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import aboutBackground from "../assets/about-background2.svg";
+import aboutBackground from "../assets/about-background4.svg";
 import mobileAboutBackground from "../assets/about-background3.svg";
 
 const AboutSectionContainer = styled.section`
@@ -14,7 +14,7 @@ const AboutSection = styled.section`
   flex-direction: column-reverse;
   overflow: hidden;
   border-radius: 2rem;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   margin: 1rem;
   background-color: ${(props) => props.theme.colors.background_light};
 
@@ -63,6 +63,7 @@ const AboutImageContainer = styled.article`
     background-image: url(${mobileAboutBackground});
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     z-index: 1;
   }
 
@@ -77,6 +78,8 @@ const AboutImage = styled.img`
   width: 75%;
   border-radius: 1rem;
   z-index: 2;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
 
   @media (min-width: 821px) {
     margin-left: 0;
