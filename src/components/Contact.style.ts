@@ -28,7 +28,7 @@ const GoogleMapContainer = styled.article`
     width: 100%;
     height: 100%;
     border-radius: 1rem;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 
     @media (min-width: 768px) {
       width: 80%;
