@@ -73,7 +73,9 @@ const Solution = styled.article<SolutionsProps>`
   }
 `;
 
-const SolutionImage = styled.img`
+const SolutionImage = styled.img.attrs({
+  loading: "lazy",
+})`
   width: 100%;
   max-height: 100%;
   border-radius: 1rem;

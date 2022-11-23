@@ -74,7 +74,9 @@ const AboutImageContainer = styled.article`
   }
 `;
 
-const AboutImage = styled.img`
+const AboutImage = styled.img.attrs({
+  loading: "lazy",
+})`
   width: 75%;
   border-radius: 1rem;
   z-index: 2;
