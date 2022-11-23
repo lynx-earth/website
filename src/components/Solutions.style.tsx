@@ -10,11 +10,11 @@ const SolutionsSectionContainer = styled.section`
   overflow: hidden;
   height: 100%;
   flex-direction: column;
-  padding: 5rem 1rem 1rem 1rem;
+  padding: 1rem;
   background-color: ${(props) => props.theme.colors.background_light};
 
   @media (min-width: 281px) {
-    padding: 5rem 2rem 2rem 2rem;
+    padding: 2rem;
   }
 
   @media (min-width: 913px) {
@@ -32,12 +32,13 @@ const SolutionsSectionContainer = styled.section`
 
 const SolutionSectionTitle = styled.h2`
   color: ${(props) => props.theme.colors.text_dark};
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 2rem;
 
   @media (min-width: 913px) {
+    font-size: 3rem;
     position: absolute;
     top: 5%;
   }

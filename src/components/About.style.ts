@@ -4,7 +4,8 @@ import mobileAboutBackground from "../assets/about-background3.svg";
 
 const AboutSectionContainer = styled.section`
   position: relative;
-  height: 80vh;
+  height: 105vh;
+  padding-bottom: 6rem;
   z-index: -1;
 `;
 
@@ -15,7 +16,7 @@ const AboutSection = styled.section`
   overflow: hidden;
   border-radius: 2rem;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-  margin: 1rem;
+  margin: 1.5rem;
   background-color: ${(props) => props.theme.colors.background_light};
 
   @media (min-width: 768px) {
