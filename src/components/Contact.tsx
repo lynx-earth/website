@@ -6,12 +6,12 @@ import {
   Address,
   ContactInfo,
   Email,
-  // Socials,
+  Socials,
 } from "./Contact.style";
 import _contactData from "../data/contact.json";
 import { _contact } from "../globals";
 import { Mail as MailIcon } from "@styled-icons/entypo";
-// import { Twitter, Discord } from "@styled-icons/remix-line";
+import { Twitter } from "@styled-icons/remix-line";
 import { Element } from "react-scroll";
 // import Logo from "./Logo";
 
@@ -31,14 +31,14 @@ const Contact = () => {
             {/* <Phone size={20} /> */}
             &nbsp;&nbsp;{contactData[0].phone}
           </ContactInfo>
-          {/* <Socials>
+          <Socials>
             <a href={contactData[0].twitter} rel="noreferrer" target="_blank">
               <Twitter size={30} color={"white"} />
             </a>
-            <a href={contactData[0].discord} rel="noreferrer" target="_blank">
+            {/* <a href={contactData[0].discord} rel="noreferrer" target="_blank">
               <Discord size={30} color={"white"} />
-            </a>
-          </Socials> */}
+            </a> */}
+          </Socials>
           <Address>
             {contactData[0].address_en}
             <br />
