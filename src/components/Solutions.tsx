@@ -8,8 +8,8 @@ import {
   SolutionText,
 } from "./Solutions.style";
 import riceField from "../assets/rice-field.jpg";
-import forest from "../assets/forest.jpg";
-import solarPanels from "../assets/solar-panel.jpg";
+import traceability from "../assets/traceability.jpg";
+import riceFarmer from "../assets/ricefarmer.png";
 import { Element } from "react-scroll";
 
 import _solutionsData from "../data/solutions.json";
@@ -28,12 +28,12 @@ const Solutions = () => {
           <SolutionText>{solutions[0].subtitle}</SolutionText>
         </Solution>
         <Solution solution={2}>
-          <SolutionImage src={forest} />
+          <SolutionImage src={traceability} />
           <SolutionTitle>{solutions[1].title}</SolutionTitle>
           <SolutionText>{solutions[1].subtitle}</SolutionText>
         </Solution>
         <Solution solution={3}>
-          <SolutionImage src={solarPanels} />
+          <SolutionImage src={riceFarmer} />
           <SolutionTitle>{solutions[2].title}</SolutionTitle>
           <SolutionText>{solutions[2].subtitle}</SolutionText>
         </Solution>
