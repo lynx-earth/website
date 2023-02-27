@@ -21,7 +21,7 @@ const Solutions = () => {
   return (
     <Element name="solutions">
       <SolutionsSectionContainer>
-        <SolutionSectionTitle>Solutions</SolutionSectionTitle>
+        <SolutionSectionTitle>Our Solution</SolutionSectionTitle>
         <Solution solution={1}>
           <SolutionImage src={riceField} />
           <SolutionTitle>{solutions[0].title}</SolutionTitle>
