@@ -44,3 +44,9 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+### `npm run deploy`
+
+After checking in all changes, run this command to build and deploy the built site to the gh_pages branch. 
+
+**Note: this currently has the side-effect of deleting the CNAME file which breaks routing from the lynx.earth domain. In order to recreate it, you need to go into the Settings for this repo and re-add the "custom URL". 
